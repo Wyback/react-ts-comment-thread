@@ -42,8 +42,6 @@ const App: FC = () => {
     }
   };
   
-
-  // ajout template codepen
   
   return (
     <div className="App">

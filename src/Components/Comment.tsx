@@ -18,6 +18,8 @@ const Comment = ({ comment }: Props) => {
   const onClick = () => {
     showForm ? setShowForm(false) : setShowForm(true)
   }
+
+// Thumbup section
 const upvote = () => {
   comment.upvote++;
   setVote(comment.upvote)
@@ -28,6 +30,7 @@ const downvote = () => {
     setVote(comment.upvote)
 }
 
+// handle the forms inputs
 const handleChangeAuthor = (event: ChangeEvent<HTMLInputElement>): void => {
   setAuthor(String(event.target.value));
 };
